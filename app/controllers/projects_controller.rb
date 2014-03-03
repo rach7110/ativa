@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  # before_action is a special rails controller helper method that can be used to run other controller methods first (usually in a private block), before running the code in the controller action . authenticate_user! is a special Devise method that needs to be run to ensure a user is logged in,
+  before_action :authenticate_user!
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   # GET /projects
