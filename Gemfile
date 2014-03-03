@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'atomic', '>=1.1.15'
+gem 'devise'
+
 # Use HAML
 gem 'haml-rails'
 gem 'haml'
